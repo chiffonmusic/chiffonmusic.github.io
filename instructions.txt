@@ -1,0 +1,28 @@
+Steps to upload to Github!
+
+1) Open bash.
+
+git init
+~
+git remote add origin https://github.com/HelloYellow99/[respository here]
+~
+git status
+~
+git add .
+~
+git status
+~
+git commit -m "Initial commit"
+~
+git push
+~
+OH MY GOSH
+
+UPDATE YOUR WEBSITE
+git status
+~
+git add .
+~
+git commit - "stuff"
+~
+git push

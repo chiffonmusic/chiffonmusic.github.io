@@ -1,4 +1,4 @@
-Steps to upload to Github!
+Steps to upload to Github!g
 
 1) Open bash.
 
@@ -26,3 +26,6 @@ git add .
 git commit -m "stuff"
 ~
 git push
+
+CHANGE YOUR REMOTE URL
+git remote set-url origin 

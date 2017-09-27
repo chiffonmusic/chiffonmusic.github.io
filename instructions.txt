@@ -23,6 +23,6 @@ git status
 ~
 git add .
 ~
-git commit - "stuff"
+git commit -m "stuff"
 ~
 git push

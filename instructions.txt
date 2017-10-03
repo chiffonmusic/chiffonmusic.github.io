@@ -25,7 +25,6 @@ git add .
 ~
 git commit -m "stuff"
 ~
-git push HelloYellow99
 
 CHANGE YOUR REMOTE URL
 git remote set-url origin 

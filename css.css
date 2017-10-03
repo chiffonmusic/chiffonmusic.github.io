@@ -2,9 +2,18 @@ body{
 	
 font-family: "Helvetica", "Arial", fantasy;
 	
+<<<<<<< HEAD
 color: #394f46;
 	background-color: MistyRose;
 	
+=======
+color: #AAFF00;
+	background-color: #ADD3F9;
+	
+text-shadow: 1px 1px #ff0000;
+	text-align: center;
+
+>>>>>>> 79e787f6878afc0a3031203e171c88a083a9f22a
 }
 
 

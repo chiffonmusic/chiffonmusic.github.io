@@ -4,11 +4,9 @@ Steps to upload to Github!g
 
 git init
 ~
-<<<<<<< HEAD
 [respository here]
 =======
 git remote add origin https://github.com/HelloYellow99/[respository here]
->>>>>>> 79e787f6878afc0a3031203e171c88a083a9f22a
 ~
 git status
 ~
@@ -20,11 +18,9 @@ git commit -m "Initial commit"
 ~
 git push
 ~
-<<<<<<< HEAD
 user pass
 =======
 OH MY GOSH
->>>>>>> 79e787f6878afc0a3031203e171c88a083a9f22a
 
 UPDATE YOUR WEBSITE
 git status
@@ -36,7 +32,6 @@ git commit -m "stuff"
 <<<<<<< HEAD
 =======
 git push
->>>>>>> 79e787f6878afc0a3031203e171c88a083a9f22a
 
 CHANGE YOUR REMOTE URL
 git remote set-url origin 

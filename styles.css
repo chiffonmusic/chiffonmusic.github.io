@@ -43,8 +43,6 @@
       /* Copyright notice styles here */
       margin-bottom: 20px; /* Add some space between content and copyright notice */
 	  text-align: right;
-	  background-color: white; /* Set the desired highlighted color */
-      padding: 20px; /* Add padding to create space around the text */
     }
 	mark {
       background-color: white; /* Set your desired background color */

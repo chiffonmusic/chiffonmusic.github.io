@@ -21,7 +21,8 @@
 	  font-family: sans-serif; /* Change the font family */
 	  background-attachment: fixed; /* Fix the background image */
       background-position: bottom; /* Position it at the bottom of the viewport */
-
+    /* Add a container div for the highlighted text */
+	}
     }
 	.navbar {
       /* Styles for the navigation bar */
@@ -42,7 +43,7 @@
     .copyright {
       /* Copyright notice styles here */
       margin-bottom: 20px; /* Add some space between content and copyright notice */
-	  background-color: #FF67BB;
-	  border-radius: 10px;
 	  text-align: right;
+	  background-color: white; /* Set the desired highlighted color */
+      padding: 20px; /* Add padding to create space around the text */
     }

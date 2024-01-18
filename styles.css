@@ -39,11 +39,15 @@
       /* Ensure that your content doesn't grow beyond the viewport height */
       flex: 1;
     }
-
     .copyright {
       /* Copyright notice styles here */
       margin-bottom: 20px; /* Add some space between content and copyright notice */
 	  text-align: right;
 	  background-color: white; /* Set the desired highlighted color */
       padding: 20px; /* Add padding to create space around the text */
+    }
+	mark {
+      background-color: white; /* Set your desired background color */
+      color: black; /* Set the text color */
+      padding: 2px; /* Add padding for space around the highlighted text */
     }

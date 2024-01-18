@@ -33,7 +33,7 @@
 	.content {
       /* Your main content styles here */
       background-color: rgba(255, 255, 255, 0.8);
-      padding: 20px;
+      padding: 100px;
       border-radius: 10px;
       /* Ensure that your content doesn't grow beyond the viewport height */
       flex: 1;

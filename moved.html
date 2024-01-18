@@ -28,6 +28,15 @@
       height: 100vh; /* Set the height of the body to 100% of the viewport height */
       margin: 20px; /* Remove default margin to ensure full coverage */
       background-color: #f0f0f0; /* Set the background color to a light gray shade */
+	  font-family: sans-serif; /* Change the font family */
+    }
+	.navbar {
+      /* Styles for the navigation bar */
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      width: 100%;
+      text-align: center;
     }
 	.content {
       /* Your main content styles here */
@@ -45,17 +54,18 @@
   </style>
 </head>
 	<body>
+	<div class="navbar">
+	<table>
+		<tbody>
+			<tr>
+				<td><a href="/moved.html" class="row-link"><b>Home</b></a></td>
+				<td><a href="/profile.html" class="row-link"><b>Profile</b></a></td>
+				<td><a href="/works.html" tabindex="-1" class="row-link"><b>Works</b></a></td>
+				<td><a href="/contact.html" tabindex="-1" class="row-link"><b>Contact</b></a></td>
+			</tr>
+		</tbody>
+	</table>
 	<div class="content">
-		<table>
-			<tbody>
-				<tr>
-					<td><a href="/moved.html" class="row-link"><b>Home</b></a></td>
-					<td><a href="/profile.html" class="row-link"><b>Profile</b></a></td>
-					<td><a href="/works.html" tabindex="-1" class="row-link"><b>Works</b></a></td>
-					<td><a href="/contact.html" tabindex="-1" class="row-link"><b>Contact</b></a></td>
-				</tr>
-			</tbody>
-		</table>
 		<h1>Chiffon</h1>
 		<p>Hello.......I'm currently <s>slacking</s>writing and recording an original album :p</p>
 		<img src="/images/test.jpg" alt="HTML5 Icon" style="width:128px;height:128px;"><br>

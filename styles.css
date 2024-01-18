@@ -19,6 +19,9 @@
       margin: 20px; /* Remove default margin to ensure full coverage */
       background-color: #C4DFF0; /* Set the background color to a light gray shade */
 	  font-family: sans-serif; /* Change the font family */
+	  background-attachment: fixed; /* Fix the background image */
+      background-position: bottom; /* Position it at the bottom of the viewport */
+
     }
 	.navbar {
       /* Styles for the navigation bar */

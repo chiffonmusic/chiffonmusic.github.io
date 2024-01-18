@@ -29,9 +29,23 @@
       margin: 20px; /* Remove default margin to ensure full coverage */
       background-color: #f0f0f0; /* Set the background color to a light gray shade */
     }
+	.content {
+      /* Your main content styles here */
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      /* Ensure that your content doesn't grow beyond the viewport height */
+      flex: 1;
+    }
+
+    .copyright {
+      /* Copyright notice styles here */
+      margin-bottom: 20px; /* Add some space between content and copyright notice */
+    }
   </style>
 </head>
 	<body>
+	<div class="content">
 		<table>
 			<tbody>
 				<tr>
@@ -46,5 +60,9 @@
 		<p>Hello.......I'm currently <s>slacking</s>writing and recording an original album :p</p>
 		<img src="/images/test.jpg" alt="HTML5 Icon" style="width:128px;height:128px;"><br>
 		<iframe width="128" height="128"src="https://www.youtube.com/embed/50RXeZOna8Q?autoplay=1"></iframe>
+	</div>
+	 <div class="copyright">
+    &copy; 2024 Chiffon. All rights reserved.
+	</div>
 	</body>
 </html>

@@ -42,4 +42,7 @@
     .copyright {
       /* Copyright notice styles here */
       margin-bottom: 20px; /* Add some space between content and copyright notice */
+	  background-color: #FF67BB;
+	  border-radius: 10px;
+	  text-align: right;
     }

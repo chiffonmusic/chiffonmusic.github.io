@@ -2,6 +2,12 @@
       border-collapse: collapse;
       width: 100%;
     }
+	.logo {
+      display: block; /* Make it a block-level element for better layout */
+      margin: 0 auto; /* Center the image horizontally */
+      max-width: 100%; /* Ensure the image doesn't exceed its natural size */
+    }
+	
     th, td {
       padding: 8px; /* Add some padding to cells for better appearance */
       text-align: center;

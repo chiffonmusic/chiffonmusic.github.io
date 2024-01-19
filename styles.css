@@ -27,14 +27,25 @@
 	  font-family: sans-serif; /* Change the font family */
 	  background-attachment: fixed; /* Fix the background image */
       background-position: bottom; /* Position it at the bottom of the viewport */
-    /* Add a container div for the highlighted text */
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Make sure the content stretches to at least the height of the viewport */
 	}
+	.container {
+      display: flex;
+      flex: 1; /* Allow the content to take up the remaining space */
+    }
 	.navbar {
       /* Styles for the navigation bar */
       background-color: #FF67BB;
       width: 100%;
       text-align: center;
 	  border-radius: 30px 30px 0 0;
+    }
+	.sidebar {
+      flex: 1; /* Adjust the ratio based on your preference */
+      background-color: #f0f0f0; /* Set the background color of the sidebar */
+      padding: 20px;
     }
 	.content {
       /* Your main content styles here */

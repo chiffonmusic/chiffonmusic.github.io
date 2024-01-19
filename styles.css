@@ -36,15 +36,23 @@
 	  flex-direction: row; /* Adjusted to row */
       flex: 1; /* Allow the content to take up the remaining space */
     }
+	/*
 	.navbar {
-      /* Styles for the navigation bar */
       background-color: #FF67BB;
       width: 100%;
       text-align: center;
-	  margin-left: 80px; /* Same as the width of the sidebar */
-	  margin-right: 80px; /* Same as the width of the sidebar */
+	  margin-left: 80px;
+	  margin-right: 80px;
 	  border-radius: 30px 30px 0 0;
-    }
+    }*/
+	.navbar {
+	  background-color: #FF67BB;
+	  width: calc(100% - 160px); /* Adjusted width accounting for left and right margins */
+	  text-align: center;
+	  padding-left: 80px; /* Same as the width of the left margin */
+	  padding-right: 80px; /* Same as the width of the right margin */
+	  border-radius: 30px 30px 0 0;
+	}
 	.content {
       /* Your main content styles here */
       background-color: rgba(255, 255, 255, 0.4);

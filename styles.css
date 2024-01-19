@@ -49,7 +49,6 @@
       padding: 50px;
       border-radius: 0 0 30px 30px;
       /* Ensure that your content doesn't grow beyond the viewport height */
-	  margin-right: 160px; /* Same as the width of the sidebar */
       padding: 0px 10px;
       flex: 1;
     }

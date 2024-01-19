@@ -36,39 +36,23 @@
 	  flex-direction: row; /* Adjusted to row */
       flex: 1; /* Allow the content to take up the remaining space */
     }
-	/*
 	.navbar {
       background-color: #FF67BB;
       width: 100%;
       text-align: center;
-	  margin-left: 80px;
-	  margin-right: 80px;
 	  border-radius: 30px 30px 0 0;
-    }*/
-	.navbar {
-	  background-color: #FF67BB;
-	  width: calc(100% - 160px); /* Adjusted width accounting for left and right margins */
-	  text-align: center;
-	  padding-left: 80px; /* Same as the width of the left margin */
-	  padding-right: 80px; /* Same as the width of the right margin */
-	  border-radius: 30px 30px 0 0;
-	}
+    }
 	.content {
       /* Your main content styles here */
       background-color: rgba(255, 255, 255, 0.4);
       padding: 50px;
       border-radius: 0 0 30px 30px;
       /* Ensure that your content doesn't grow beyond the viewport height */
-	  margin-left: 80px; /* Same as the width of the sidebar */
-	  margin-right: 80px; /* Same as the width of the sidebar */
-      padding: 0px 10px;
       flex: 1;
     }
     .copyright {
       /* Copyright notice styles here */
       margin-bottom: 20px; /* Add some space between content and copyright notice */
 	  text-align: right;
-	  margin-left: 80px; /* Same as the width of the sidebar */
-	  margin-right: 80px; /* Same as the width of the sidebar */
 	  color: #FF67BB;
     }

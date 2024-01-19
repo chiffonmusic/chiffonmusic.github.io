@@ -79,7 +79,7 @@
 	  text-align: right;
 	  color: #FF67BB;
     }
-	@media screen and (max-height: 600px) {
+	@media screen and (max-width: 1280px) {
 		.sidenav {
 		  position: relative;
 		  width: 100%; /* Adjust the width as needed for mobile */

@@ -64,9 +64,6 @@
 	  color: #f1f1f1;
 	}
 	}
-	@media screen and (max-height: 450px) {
-      .sidenav {padding-top: 15px;}
-      .sidenav a {font-size: 18px;}
 	}
 	.content {
       /* Your main content styles here */
@@ -84,3 +81,13 @@
 	  text-align: right;
 	  color: #FF67BB;
     }
+	@media screen and (max-height: 600px) {
+		.sidenav {
+		  position: relative;
+		  width: 100%; /* Adjust the width as needed for mobile */
+		  margin-top: 20px; /* Add margin to separate from content */
+		}
+		.content {
+          margin-left: 0; /* Reset margin for smaller screens */
+		}
+	}

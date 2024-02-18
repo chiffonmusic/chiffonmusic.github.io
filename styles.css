@@ -32,6 +32,9 @@
       flex-direction: column;
       min-height: 100vh; /* Make sure the content stretches to at least the height of the viewport */
 	}
+	body a {
+    color: #ccc; /* Set a lighter link color */
+	}
 	.container {
       display: flex;
 	  flex-direction: row; /* Adjusted to row */

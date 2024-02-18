@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
   <script>
-        // Function to load shared content
-        function loadSharedContent() {
+        // Function to load shared content and copyright notice
+        function loadContent() {
             // Fetch the shared content file
             fetch('shared-content.html')
                 .then(response => response.text())
@@ -18,26 +18,19 @@
                     var sharedContent = tempElement.innerHTML;
                     // Insert the shared content after the logo image
                     document.querySelector('.logo').insertAdjacentHTML('afterend', sharedContent);
+                    // Copyright notice HTML
+                    var copyrightHTML = '&copy; 2024 Chiffon. All rights reserved.';
+                    // Insert the copyright notice at the end of the body
+                    document.body.insertAdjacentHTML('beforeend', '<div class="copyright">' + copyrightHTML + '</div>');
                 })
                 .catch(error => {
                     console.error('Error loading shared content:', error);
                 });
         }
 
-        // Function to load copyright notice
-        function loadCopyrightNotice() {
-            // Copyright notice HTML
-            var copyrightHTML = '&copy; 2024 Chiffon. All rights reserved.';
-            // Insert the copyright notice at the end of the body
-            document.body.insertAdjacentHTML('beforeend', '<div class="copyright">' + copyrightHTML + '</div>');
-        }
-
-        // Call the functions to load shared content and copyright notice when the page is loaded
-        window.addEventListener('DOMContentLoaded', function() {
-            loadSharedContent();
-            loadCopyrightNotice();
-        });
-    </script>
+        // Call the function to load shared content and copyright notice when the page is loaded
+        window.addEventListener('DOMContentLoaded', loadContent);
+  </script>
 </head>
 	<body>
 	<img class="logo" src="/images/title.png" alt="Chiffon">

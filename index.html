@@ -4,6 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+  <script>
+        // Function to load shared content
+        function loadSharedContent() {
+            // Fetch the shared content file
+            fetch('shared-content.html')
+                .then(response => response.text())
+                .then(data => {
+                    // Create a temporary element to hold the shared content
+                    var tempElement = document.createElement('div');
+                    tempElement.innerHTML = data;
+                    // Get the shared content from the temporary element
+                    var sharedContent = tempElement.innerHTML;
+                    // Add the shared content to the body of the page
+                    document.body.insertAdjacentHTML('afterbegin', sharedContent);
+                })
+                .catch(error => {
+                    console.error('Error loading shared content:', error);
+                });
+        }
+        // Call the function to load shared content when the page is loaded
+        window.addEventListener('DOMContentLoaded', loadSharedContent);
+  </script>
 </head>
 	<body>
 	<!-- SCM Music Player https://www.scmplayer.net -->
@@ -11,18 +33,6 @@
 	data-config="{'skin':'skins/black/skin.css','volume':50,'autoplay':true,'shuffle':false,'repeat':1,'placement':'top','showplaylist':false,'playlist':[{'title':'','url':'https://www.youtube.com/watch?v=50RXeZOna8Q'}]}" ></script>
 	<!-- SCM Music Player script end -->
 	<img class="logo" src="/images/title.png" alt="Chiffon">
-	<div class="navbar">
-	<table>
-		<tbody>
-			<tr>
-				<td><a href="/index.html" class="row-link"><b>Home</b></a></td>
-				<td><a href="/profile.html" class="row-link"><b>Profile</b></a></td>
-				<td><a href="/works.html" tabindex="-1" class="row-link"><b>Works</b></a></td>
-				<td><a href="/contact.html" tabindex="-1" class="row-link"><b>Contact</b></a></td>
-			</tr>
-		</tbody>
-	</table>
-	</div>
 	<div class="content">
 		<h1>Chiffon</h1>
 		<p>Hello.......I'm currently <s>slacking</s>writing and recording an original album :p</p>
@@ -35,9 +45,6 @@
 		</ul>
 		<img src="/images/test.jpg" alt="HTML5 Icon" style="width:200px;height:200px;"><br>
 		<iframe width="200" height="200"src="https://www.youtube.com/embed/50RXeZOna8Q"></iframe>
-	</div>
-	<div class="copyright">
-    &copy; 2024 Chiffon. All rights reserved.
 	</div>
 	</body>
 </html>

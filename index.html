@@ -18,10 +18,6 @@
                     var sharedContent = tempElement.innerHTML;
                     // Insert the shared content after the logo image
                     document.querySelector('.logo').insertAdjacentHTML('afterend', sharedContent);
-                    // Copyright notice HTML
-                    var copyrightHTML = '&copy; 2024 Chiffon. All rights reserved.';
-                    // Insert the copyright notice at the end of the body
-                    document.body.insertAdjacentHTML('beforeend', '<div class="copyright">' + copyrightHTML + '</div>');
                 })
                 .catch(error => {
                     console.error('Error loading shared content:', error);
@@ -32,20 +28,21 @@
         window.addEventListener('DOMContentLoaded', loadContent);
   </script>
 </head>
-	<body>
-	<img class="logo" src="/images/title.png" alt="Chiffon">
-	<div class="content">
-		<h1>Chiffon</h1>
-		<p>Hello.......I'm currently <s>slacking</s>writing and recording an original album :p</p>
-		<p>Links: 
-		<ul>
-			<li><a href="https://twitter.com/chiffonaise">X (formerly Twitter)</a></li>
-			<li><a href="https://www.youtube.com/@Chiffonaise">YouTube</a></li>
-			<li><a href="https://soundcloud.com/chiffonaise">SoundCloud</a></li>
-			<li>Discord (contact minakamihina)</li>
-		</ul>
-		<img src="/images/test.jpg" alt="HTML5 Icon" style="width:200px;height:200px;"><br>
-		<iframe width="200" height="200"src="https://www.youtube.com/embed/50RXeZOna8Q"></iframe>
-	</div>
-	</body>
+<body>
+    <img class="logo" src="/images/title.png" alt="Chiffon">
+    <div class="content">
+        <h1>Chiffon</h1>
+        <p>Hello.......I'm currently <s>slacking</s>writing and recording an original album :p</p>
+        <p>Links: 
+        <ul>
+            <li><a href="https://twitter.com/chiffonaise">X (formerly Twitter)</a></li>
+            <li><a href="https://www.youtube.com/@Chiffonaise">YouTube</a></li>
+            <li><a href="https://soundcloud.com/chiffonaise">SoundCloud</a></li>
+            <li>Discord (contact minakamihina)</li>
+        </ul>
+        <img src="/images/test.jpg" alt="HTML5 Icon" style="width:200px;height:200px;"><br>
+        <iframe width="200" height="200"src="https://www.youtube.com/embed/50RXeZOna8Q"></iframe>
+    </div>
+    <!-- The navbar and copyright content will be loaded dynamically -->
+</body>
 </html>

@@ -6,26 +6,29 @@
   <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
   <script>
         // Function to load shared content and copyright notice
-        function loadContent() {
-            // Fetch the shared content file
-            fetch('shared-content.html')
-                .then(response => response.text())
-                .then(data => {
-                    // Create a temporary element to hold the shared content
-                    var tempElement = document.createElement('div');
-                    tempElement.innerHTML = data;
-                    // Get the shared content from the temporary element
-                    var sharedContent = tempElement.innerHTML;
-                    // Insert the shared content after the logo image
-                    document.querySelector('.logo').insertAdjacentHTML('afterend', sharedContent);
-                })
-                .catch(error => {
-                    console.error('Error loading shared content:', error);
-                });
-        }
+	function loadContent() {
+    // Fetch the shared content file
+    fetch('shared-content.html')
+        .then(response => response.text())
+        .then(data => {
+            // Create a temporary element to hold the shared content
+            var tempElement = document.createElement('div');
+            tempElement.innerHTML = data;
+            // Get the shared content from the temporary element
+            var sharedContent = tempElement.innerHTML;
+            // Insert the shared content after the content
+            document.querySelector('.content').insertAdjacentHTML('afterend', sharedContent);
+        })
+        .catch(error => {
+            console.error('Error loading shared content:', error);
+        });
 
-        // Call the function to load shared content and copyright notice when the page is loaded
-        window.addEventListener('DOMContentLoaded', loadContent);
+    // Copyright notice HTML
+    var copyrightHTML = '&copy; 2024 Chiffon. All rights reserved.';
+    // Insert the copyright notice at the end of the body
+    document.body.insertAdjacentHTML('beforeend', '<div class="copyright">' + copyrightHTML + '</div>');
+}
+
   </script>
 </head>
 <body>
